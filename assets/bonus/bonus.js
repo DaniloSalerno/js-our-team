@@ -87,6 +87,9 @@ btnSendModal.addEventListener('click', () => {
         img : addedImg
     })
 
+    nameInputDomEl.value = '';
+    roleInputDomEl.value = '';
+    imgInputDomEl.value = '';
      /* addedName = '';
     addedRole = '';
     addedImg = ''; */
