@@ -1,13 +1,3 @@
-/*
-MILESTONE 2:
-Stampare le stesse informazioni su DOM sottoforma di stringhe
-
-BONUS 1:
-Trasformare la stringa foto in una immagine effettiva
-
-BONUS 2:
-Organizzare i singoli membri in card/schede*/
-
 const members = [
     {
         name : 'Wayne Barnett',
@@ -46,18 +36,34 @@ const members = [
     },
 ];
 
-const teamDomEl = document.querySelector('.team')
+const teamDomEl = document.querySelector('.team');
+const rowDomEl = document.querySelector('.row');
 
 for (const key in members) {
 
     const member = members[key];
 
-    console.log('NAME ' + member.name);
-    console.log('ROLE ' + member.role);
-    console.log('IMG ' + member.img);
+    //console.log('NAME ' + member.name);
+    //console.log('ROLE ' + member.role);
+    //console.log('IMG ' + member.img);
 
-    teamDomEl.innerHTML += `Name: ${member.name};</br>
-    Role: ${member.role};</br>
-    Img source: ${member.img}</br></br>`
+    const markupMember = `
+<div class="col-12 col-md-6 col-lg-4">
+    <div class="card" style="width: 18rem;">
+        <img src="./assets/img/${member.img}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <div class="card-text text-center">
+                <h3>${member.name}</h3>
+                <span>${member.role}</span>
+            </div>
+        </div>
+    </div>
+</div>
+`
+rowDomEl.innerHTML += markupMember
+
+console.log(markupMember);
+
+    
 
 }
