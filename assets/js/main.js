@@ -1,6 +1,4 @@
 /*
-Creare un array di oggetti: nome, ruolo e foto.
-
 MILESTONE 0:
 Creare l’array di oggetti con le informazioni fornite.
 
@@ -53,3 +51,14 @@ const members = [
         img : 'barbara-ramos-graphic-designer.jpg'
     },
 ];
+
+for (const key in members) {
+
+    const member = members[key];
+
+    console.log('NAME ' + member.name);
+    console.log('ROLE ' + member.role);
+    console.log('IMG ' + member.img);
+
+
+}
