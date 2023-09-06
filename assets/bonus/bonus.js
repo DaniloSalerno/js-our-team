@@ -36,7 +36,7 @@ const members = [
     },
 ];
 
-const rowDomEl = document.querySelector('.row');
+const rowDomEl = document.querySelector('#team');
 const nameInputDomEl = document.querySelector('form #name');
 const roleInputDomEl = document.querySelector('form #role');
 const imgInputDomEl = document.querySelector('form #img');
@@ -60,7 +60,7 @@ for (const key in members) {
         <img src="${member.img}" class="card-img-top" alt="...">
         <div class="card-body">
             <div class="card-text text-center">
-                <h3>${member.name}</h3>
+                <h3 class="border-bottom pb-2">${member.name}</h3>
                 <span>${member.role}</span>
             </div>
         </div>
@@ -105,7 +105,7 @@ btnSendModal.addEventListener('click', () => {
         <img src="${member.img}" class="card-img-top" alt="...">
         <div class="card-body">
             <div class="card-text text-center">
-                <h3>${member.name}</h3>
+                <h3 class="border-bottom pb-2">${member.name}</h3>
                 <span>${member.role}</span>
             </div>
         </div>
