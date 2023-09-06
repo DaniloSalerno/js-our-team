@@ -1,10 +1,4 @@
 /*
-MILESTONE 0:
-Creare l’array di oggetti con le informazioni fornite.
-
-MILESTONE 1:
-Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
-
 MILESTONE 2:
 Stampare le stesse informazioni su DOM sottoforma di stringhe
 
@@ -52,6 +46,8 @@ const members = [
     },
 ];
 
+const teamDomEl = document.querySelector('.team')
+
 for (const key in members) {
 
     const member = members[key];
@@ -60,5 +56,8 @@ for (const key in members) {
     console.log('ROLE ' + member.role);
     console.log('IMG ' + member.img);
 
+    teamDomEl.innerHTML += `Name: ${member.name};</br>
+    Role: ${member.role};</br>
+    Img source: ${member.img}</br></br>`
 
 }
