@@ -36,7 +36,6 @@ const members = [
     },
 ];
 
-const teamDomEl = document.querySelector('.team');
 const rowDomEl = document.querySelector('.row');
 
 for (const key in members) {
