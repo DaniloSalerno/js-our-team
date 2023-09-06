@@ -49,7 +49,7 @@ for (const key in members) {
 
     const markupMember = `
 <div class="col-12 col-md-6 col-lg-4">
-    <div class="card" style="width: 18rem;">
+    <div class="card shadow" style="width: 18rem;">
         <img src="./assets/img/${member.img}" class="card-img-top" alt="...">
         <div class="card-body">
             <div class="card-text text-center">
